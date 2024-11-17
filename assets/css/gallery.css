@@ -1,0 +1,48 @@
+/* Estilo geral da galeria */
+#gallery {
+    padding: 40px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  #gallery h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #333;
+  }
+  
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas fixas */
+    gap: 20px; /* Espaço entre as imagens */
+  }
+  
+  .imagem {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+ .imagem img {
+    width: 80%; /* Define a largura da imagem como 80% do contêiner */
+    height: auto; /* Mantém a proporção */
+    aspect-ratio: 16/9; /* Define a proporção fixa */
+    object-fit: cover; /* Ajusta a imagem sem distorcer */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 auto; /* Centraliza a imagem no contêiner */
+  }
+  
+  .imagem p {
+    margin: 10px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Garantir layout de 2 linhas */
+  .galeria {
+    grid-auto-rows: 1fr; /* Tamanho proporcional para todas as linhas */
+  }
+  

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Mario Kart</title>
+    <link rel="icon" type="image/png" href="assets/img/Logo.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/gallery.css">
+</head>
+<body>
+    <header>
+        <img src="assets/img/logo.png" alt="">
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#gallery">Galeria</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- https://www.alainclass.com/cars/ -->
+    <section class="container">
+        <div class="list">
+            <div class="item active itemAnime">
+                <div class="car-img">
+                    <img src="assets/img/Mario.png" alt="Mario">
+                </div>
+                <div class="content">
+                    <p class="car-information">Mario Segali</p>
+                    <h2>Mario</h2>
+                    <p class="description">Mario, em Mario Kart, é um personagem equilibrado, ideal para iniciantes, competindo em pistas 
+                        variadas e usando itens como a estrela para ganhar vantagem.</p>
+                    <button class=" button1">Saiba Mais</button>
+                    <!-- information no btn sem -->
+                </div>
+            </div>
+            
+            <!-- outros 2 itens so depois do css pra nao ficar ruim os testes... -->
+            <div class="item">
+                <div class="car-img">
+                    <img src="assets/img/Luigi.png" alt="Luigi">
+                    <!-- <div class="carModelContainer" style="width: 100%; height: 100%;"></div> -->
+                </div>
+                <div class="content">
+                    <p class="car-information">Luigi Marson Grandi</p>
+                    <h2>Luigi</h2>
+                    <p class="description">Luigi, em Mario Kart, é um personagem balanceado, ótimo para iniciantes. Ele corre em várias 
+                        pistas e usa itens como o cogumelo para ganhar velocidade.</p>
+                    <button class=" button1">Saiba Mais</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="car-img">
+                    <img src="assets/img/Bowser.png" alt="Bowser">
+                    <!-- <div class="carModelContainer" style="width: 100%; height: 100%;"></div> -->
+                </div>
+                <div class="content">
+                    <p class="car-information">Bowser Koopa</p>
+                    <h2>Bowser</h2>
+                    <p class="description">Bowser, em Mario Kart, é um personagem pesado, com alta velocidade máxima, mas pouca aceleração. 
+                        Ele se destaca em pistas longas e usa itens para dominar a corrida.</p>
+                    <button class=" button1">Saiba Mais</button>
+                </div>
+            </div>
+        </div>
+        <div class="arrows">
+            <button id="prev" class="button">←</button>
+            <button id="next" class="button">→</button>
+            <!-- <button id="next"><img src="assets/img/arrow.png" alt="setta 2"></button> -->
+        </div>
+        <div class="indicators">
+            <div class="number">01</div>
+            <ul>
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Galeria</h2>
+        <div class="galeria">
+          <div class="imagem">
+            <img src="assets/img/Rainbow Roadjpeg.jpeg" alt="Rainbow Road">
+            <p>Rainbow Road: Pista colorida e sem barreiras, famosa pela sua dificuldade</p>
+          </div>
+          <div class="imagem">
+            <img src="assets/img/Circuit 3.jfif" alt="Circuit 3">
+            <p>Circuito 3: Uma pista desafiadora com curvas fechadas e obstáculos variados.</p>
+          </div>
+          <div class="imagem">
+            <img src="assets/img/DK's Jungle Parkway.jfif" alt="DK's Jungle Parkway">
+            <p>DK's Jungle Parkway: Trilhas na selva com saltos e árvores no caminho.</p>
+          </div>
+          <div class="imagem">
+            <img src="assets/img/Choco Mountain.jpeg" alt="Choco Mountain">
+            <p>Choco Mountain: Montanha de chocolate com rochas caindo e curvas perigosas.</p>
+          </div>
+          <div class="imagem">
+            <img src="assets/img/Bowser Castle.jpg" alt="Bowser Castle">
+            <p>Bowser Castle: Castelo sinistro cheio de armadilhas e curvas apertadas.</p>
+          </div>
+          <div class="imagem">
+            <img src="assets/img/Sky Garden.jpg" alt="Sky Garden">
+            <p>Sky Garden: Pista flutuante com curvas fechadas e plataformas suspensas no céu.</p>
+          </div>
+        </div>
+      </section>      
+
+    <section id="contact">
+        <form action="#" method="post" class="form-contato">
+          <h2>Contato</h2>
+          <div class="campo">
+            <label for="nome">Nome:</label>
+            <input type="text" id="first-name" name="nome" required placeholder="Digite seu nome">
+          </div>
+          <div class="campo">
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="last-name" name="sobrenome" required placeholder="Digite seu sobrenome">
+          </div>
+          <div class="campo">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+          </div>
+          <div class="campo">
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="message" name="mensagem" rows="5" required placeholder="Digite sua mensagem"></textarea>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+    </section>
+            
+      <div class="modal" id="myModal">
+        <span class="close" onclick="closeModal()" >&times;</span>
+        <img class="modal-content" id="modalImage">
+      </div>
+
+      <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+      <script type="text/javascript">
+        (function() {
+            emailjs.init("b-GDHsPjdWerH1lCw"); // Substitua pelo seu User ID do EmailJS
+        })();
+    
+        document.getElementById('contact').addEventListener('submit', function(event) {
+            event.preventDefault();
+    
+            const templateParams = {
+                first_name: document.getElementById('first-name').value,
+                last_name: document.getElementById('last-name').value,
+                email: document.getElementById('email').value,
+                message: document.getElementById('message').value
+            };
+    
+            emailjs.send('service_0mhokj5', 'template_2fquvzb', templateParams)
+                .then(function() {
+                    alert('Email enviado com sucesso!');
+                }, function(error) {
+                    alert('Falha ao enviar o email, tente novamente: ' + JSON.stringify(error));
+                });
+        });</script>
+       <script src="assets/js/script.js"></script>
+</body>
+<footer>
+    <div class="footer-content">
+        <div class="contact-info">
+            <p><strong>Informações de Contato:</strong></p>
+            <p>Email: <a href="mailto:support@mariokart.com">suporte@mariokart.com</a></p>
+            <p>Telefone: (11) 1234-5678</p>
+        </div>
+        <div class="footer-links">
+            <p><strong>Links:</strong></p>
+            <ul>
+                <li><a href="#">Política de Privacidade</a></li>
+                <li><a href="#">Termos de Uso</a></li>
+            </ul>
+        </div>
+        <div class="social-media">
+            <p><strong>Redes Sociais:</strong></p>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+    <p>&copy; 2024 Mario Kart. Todos os direitos reservados.</p>
+</footer>
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</html>
